@@ -7,16 +7,18 @@ const initialGameBoard = [
     [null, null, null],
 ]
 
-function GameBoard() {
+function GameBoard({ onSelectSquare, activePlayerSymbol}) {
     const [gameBoard, setGameBoard] = useState(initialGameBoard);
 
     function handleClickButton(rowIndex, colIndex) {
         setGameBoard((prevGameBaord) => {
             const updatedBoard = [...prevGameBaord.map(innerArray => [...innerArray])];
-            updatedBoard[rowIndex][colIndex] = "X";
+            updatedBoard[rowIndex][colIndex] = activePlayerSymbol;
             return updatedBoard
         })
         console.log("btn clicked");
+
+        onSelectSquare()
     }
 
 

@@ -1,3 +1,11 @@
+
+
+October 22
+
+React Udemy lesson 81 PUWOLO
+* would slice() work instead of "            const updatedBoard = [...prevGameBaord.map(innerArray => [...innerArray])];"
+* understand how "playerSymbol" is  created
+
 Ocober 17
 
 * React Udemy: lesson 75 pick up where you left off. Analuse  handleEditClick()
